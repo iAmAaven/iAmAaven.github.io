@@ -6,25 +6,55 @@
         <title>ODE TO AN ALBUM</title>
     </head>
     <body>
-        <div class = "navbar">
-            <a href = "index.html"><img src = "images/homeSymbol.png" class = "symbol"></a>
+        <nav id = "navbar">
+            <img src = "images/perhonen.png" class = "symbol">
             <a href = "index.html">HOME</a>
-            <a href = "">ODE TO AN ALBUM</a>
+            <a href = "">REVIEWS</a>
             <a href = "about.html">ABOUT</a>
-        </div>
+        </nav>
 
-        <div class = "content">
+        <main>
             <h1>ODE TO AN ALBUM</h1>
             <p><br>Something about this section<br>
                 Blah blah blah
-                <br>
+                <br><br><br>
             </p>
-        </div>
+            
+            <button id = "sort-alphabetically">Sort Alphabetically</button>
+
+            <section class = "album-list" id = "album-list">
+                <div class = "album-box" onclick="flipAlbum(1)">
+                    <div class = "album-inner" id="album1">
+                        <div class = "album-box-front">
+                            <img src = "https://upload.wikimedia.org/wikipedia/en/4/48/SleepTokenTMBTE.jpg" class = "album-cover">
+                            <strong class = "album-title" id = "album1-title">Take Me Back To Eden</strong>
+                            <strong class = "artist" id = "album1-artist">Sleep Token</strong>
+                        </div>
+                        <div class = "album-box-back">
+                            <strong>Hello there</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class = "album-box" onclick="flipAlbum(2)">
+                    <div class = "album-inner" id="album2">
+                        <div class = "album-box-front">
+                            <img src = "https://upload.wikimedia.org/wikipedia/en/f/fc/SleepTokenSundowning.jpg" class = "album-cover">
+                            <strong class = "album-title" id = "album2-title">Sundowning</strong>
+                            <strong class = "artist" id = "album2-artist">Sleep Token</strong>
+                        </div>
+                        <div class = "album-box-back">
+                            <strong>Hello there</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            &copy; 2024 Aapo Harjunpää. All rights reserved.
+        </footer>
     </body>
 
     <script src="../script.js"></script>
     
-    <footer>
-        &copy; 2024 Aapo Harjunpää. All rights reserved.
-    </footer>
 </html>
