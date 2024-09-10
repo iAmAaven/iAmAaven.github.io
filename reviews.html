@@ -2,6 +2,7 @@
 <html lang = "en">
     <head>
         <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href = "styles.css" rel = "StyleSheet" type = "text/css">
         <title>ODE TO AN ALBUM</title>
     </head>
@@ -9,18 +10,17 @@
         <nav id = "navbar">
             <img src = "images/perhonen.png" class = "symbol">
             <a href = "index.html">HOME</a>
-            <a href = "">REVIEWS</a>
+            <a href = "">ALBUM REVIEWS</a>
             <a href = "about.html">ABOUT</a>
         </nav>
 
         <main>
             <h1>ODE TO AN ALBUM</h1>
-            <p><br>Something about this section<br>
-                Blah blah blah
-                <br><br><br>
-            </p>
             
-            <button id = "sort-alphabetically">Sort Alphabetically</button>
+            <div class = "sort-by-buttons">
+                <button id = "sort-by-title">Sort by Album Title</button>
+                <button id = "sort-by-artist">Sort by Artist</button>
+            </div>
 
             <div class = "album-list" id = "album-list">
                 <div class = "album-box" onclick="flipAlbum(1)">
@@ -41,6 +41,47 @@
                             <img src = "https://upload.wikimedia.org/wikipedia/en/f/fc/SleepTokenSundowning.jpg" class = "album-cover">
                             <strong class = "album-title" id = "album2-title">Sundowning</strong>
                             <strong class = "artist" id = "album2-artist">Sleep Token</strong>
+                        </div>
+                        <div class = "album-box-back">
+                            <strong>Album rating</strong>
+                            <div class = "rating-box">
+                                <img src = "images/kokoPerho.png">
+                                <img src = "images/kokoPerho.png">
+                                <img src = "images/kokoPerho.png">
+                                <img src = "images/kokoPerho.png">
+                                <img src = "images/kokoPerho.png">
+                            </div>
+                            <strong>Favorite song from the album:</strong>
+                            <strong><br>Higher</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class = "album-box" onclick="flipAlbum(3)">
+                    <div class = "album-inner" id="album3">
+                        <div class = "album-box-front">
+                            <img src = "https://upload.wikimedia.org/wikipedia/en/9/9f/SleepTokenTPWBYT.jpg" class = "album-cover">
+                            <strong class = "album-title" id = "album3-title">This Place Will Become Your Tomb</strong>
+                            <strong class = "artist" id = "album3-artist">Sleep Token</strong>
+                        </div>
+                        <div class = "album-box-back">
+                            <strong>Album rating</strong>
+                            <div class = "rating-box">
+                                <img src = "images/kokoPerho.png">
+                                <img src = "images/kokoPerho.png">
+                                <img src = "images/kokoPerho.png">
+                                <img src = "images/kokoPerho.png">
+                                <img src = "images/puolPerho.png">
+                            </div>
+                            <strong>Favorite song from the album:</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class = "album-box" onclick="flipAlbum(4)">
+                    <div class = "album-inner" id="album4">
+                        <div class = "album-box-front">
+                            <img src = "https://upload.wikimedia.org/wikipedia/en/a/af/TheDeathOfPeaceOfMind.jpg" class = "album-cover">
+                            <strong class = "album-title" id = "album4-title">DEATH OF PEACE OF MIND</strong>
+                            <strong class = "artist" id = "album4-artist">Bad Omens</strong>
                         </div>
                         <div class = "album-box-back">
                             <strong>Hello there</strong>
