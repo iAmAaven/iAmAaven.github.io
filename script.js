@@ -15,13 +15,20 @@ window.addEventListener("scroll", function () {
 
 function flipAlbum(albumNumber) {
   var album = document.getElementById("album" + albumNumber);
-  var artist = document.getElementById("album" + albumNumber + "-artist");
-  var albumTitle = document.getElementById("album" + albumNumber + "-title");
 
   if (album.style.transform === "rotateY(180deg)") {
     album.style.transform = "rotateY(0deg)";
   } else {
     album.style.transform = "rotateY(180deg)";
+  }
+}
+
+function toggleMenu() {
+  var x = document.getElementById("nav-links");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
 }
 
@@ -32,7 +39,7 @@ ALBUM SORTING
 */
 
 // Function to sort the albums alphabetically
-document.getElementById("sort-alphabetically").addEventListener("click", () => {
+document.getElementById("sort-by-title").addEventListener("click", () => {
   const albumList = document.getElementById("album-list");
   const albumBoxes = Array.from(albumList.getElementsByClassName("album-box"));
 
@@ -65,20 +72,14 @@ SORT ALBUMS BY ARTIST
 */
 
 // Function to sort the albums alphabetically by artist
-document.getElementById("sort-alphabetically").addEventListener("click", () => {
+document.getElementById("sort-by-artist").addEventListener("click", () => {
   const albumList = document.getElementById("album-list");
   const albumBoxes = Array.from(albumList.getElementsByClassName("album-box"));
 
   albumBoxes.sort((a, b) => {
-    const titleA = a
-      .querySelector(".album-title")
-      .textContent.trim()
-      .toUpperCase();
-    const titleB = b
-      .querySelector(".album-title")
-      .textContent.trim()
-      .toUpperCase();
-    return titleA.localeCompare(titleB);
+    const artistA = a.querySelector(".artist").textContent.trim().toUpperCase();
+    const artistB = b.querySelector(".artist").textContent.trim().toUpperCase();
+    return artistA.localeCompare(artistB);
   });
 
   albumList.innerHTML = "";
