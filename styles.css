@@ -81,6 +81,7 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1em;
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -134,8 +135,8 @@ main {
 
 .album-box-back {
     transform: rotateY(180deg);
-    background-color: #a97a7a;
-    color: #2a2a2c;
+    background-color: #383838;
+    color: #ddd;
 }
 .album-box-front {
     background-color: #383838;
@@ -163,7 +164,7 @@ main {
     align-content: center;
     margin: 0 auto;
     width: 80%;
-    height: 30%;
+    height: 50px;
 }
 
 .rating-box img {
@@ -172,7 +173,9 @@ main {
 }
 
 footer {
+    box-shadow: 0px -12px 20px 0px rgba(0, 0, 0, 0.5);
     padding: 80px;
+    z-index: 2;
 }
 
 /* Media query for smaller screens */
