@@ -98,6 +98,12 @@ a {
     margin-right: 20%;
 }
 
+.project-button-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
 #project-symbol {
     max-width: 30px;
     opacity: 0.25;
@@ -204,4 +210,23 @@ footer {
     .mobile-separator {
         margin-bottom: 0;
     }
+}
+
+#contact i {
+    margin-right: 10px;
+    /* color: #007bff; */
+}
+
+#contact a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact a:hover {
+    color: red;
+}
+
+#contact {
+    height: 100vh;
 }
